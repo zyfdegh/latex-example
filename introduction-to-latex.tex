@@ -1,0 +1,111 @@
+\documentclass{article}
+
+\title{Introduction to LaTeX}
+
+\begin{document}
+
+\section{Introduction}
+This file shows how to write an article using LaTeX.
+
+LaTeX is a language for writing document, similar as Markdown. With sections, tables, labels,
+references, math expressions. Of course, it is known as a geek editor for mathematics.
+
+This article is totally written with LaTeX.
+
+\section{Install}
+
+Any text editor can be used to write LaTeX files.
+
+For macOS, MacTex is recommended, but it's hugo and up to 3.4GB. 
+
+Personally, I'm using Texpad which have a realtime PDF preview of your document.
+
+The LaTeX file extension is *.tex.
+
+\section{Sytax}
+In this section, I will show you how to using the syntax.
+
+\subsection{Tables}
+
+Difficulty comparison of LaTeX and Markdown
+
+\begin{tabular}{r|r|r|r|r|r}
+\hline
+Name & Section & Table & Link & Media & Math\\
+\hline
+LaTeX & easy & medium & - & - & - \\
+\hline
+Markdown & easy & easy & easy & - & - \\
+\hline
+\end{tabular}
+
+\subsection{Lists}\label{section-lists}
+
+Unordered list
+
+\begin{itemize}
+	\item Atom
+	\item vscode
+	\item Vim
+\end{itemize}
+
+Ordered list
+
+\begin{enumerate}
+	\item First, learn about the syntax
+	\item Then try yourself with an editor
+	\item Publish the article
+\end{enumerate}
+
+\subsection{Labels and references}
+
+If you want to reference a section in the article, we can use labels.
+
+For example if you want to refer "3.2 List" here, you need to first set label 
+for the section with label{labelname}, then use ref{labelname} for the reference.
+
+Refer to \ref{section-lists}
+
+\subsection{Math}
+
+Use one pair of dollor sign to wrap inline Math expressions. For example, $E=mc^2$
+
+Use two pairs of dollor sign to display math formula in a new line and centered.
+
+
+\subsection{Examples}
+
+From WikiPedia "Quantum mechanics"
+
+$$E=h\nu$$
+
+$$-\frac{\hbar^2}{2m}\frac{d^2 \psi}{dx^2}=E\psi$$
+
+$$\hat{p}_x=-i\hbar\frac{d}{dx}$$
+
+$$\frac{1}{2m}\hat{p}_x^2=E$$
+
+$$\psi(x)=Ae^{ikx}+Be^{-ikx}$$
+$$E=\frac{\hbar^2 k^2}{2m}$$
+
+$$\psi(x)=C\sin kx+D\cos kx$$
+$$\psi(0)=0=C\sin 0+D\cos 0=D$$
+
+$$\psi(L)=0=C\sin kL$$
+
+$k=\frac{n\pi}{L}$ \qquad $n=1,2,3,....$
+
+
+$$E=\frac{\hbar^2 \pi^2 n^2}{2mL^2}=\frac{n^2h^2}{8mL^2}$$
+
+$$V(x)=\frac{1}{2}m\omega^2x^2$$
+
+$$\psi(x)=\sqrt{\frac{1}{2^n n!}}\cdot\left( \frac{m\omega}{\pi\hbar} \right)^{1/4}\cdot e^{-\frac{m\omega x^2}{2\hbar}}\cdot H_n \left( \sqrt{\frac{m\omega}{\hbar}x} \right)$$
+
+\section{References}
+[1] David Xiao.A beginner's Guide to LaTeX. https://www.cs.princeton.edu/courses/archive/spr10/cos433/Latex/latex-guide.pdf
+
+[2] LaTeX Mathematical Symbols. https://reu.dimacs.rutgers.edu/Symbols.pdf
+
+
+\end{document}
